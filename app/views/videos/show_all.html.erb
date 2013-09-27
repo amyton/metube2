@@ -4,7 +4,8 @@
 	<% @all_videos.each do |video| %>
 		<li>
 			<%= link_to video.title, video_url(video.id) %> | 
-			<%= video.snippet %>
+			Rating: <%= video.rating %>
 		</li>
+		<%= video.snippet %>
 	<% end %>
 </ul>

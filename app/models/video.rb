@@ -4,6 +4,6 @@ class Video < ActiveRecord::Base
   end
 
   def rating
-    self.rand(1..5)
+    rand(1..5)
   end
 end
