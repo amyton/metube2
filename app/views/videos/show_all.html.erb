@@ -2,6 +2,9 @@
 
 <ul> 
 	<% @all_videos.each do |video| %>
-		<li><%= link_to video.title, video_url(video.id) %></li>
+		<li>
+			<%= link_to video.title, video_url(video.id) %> | 
+			<%= video.description.truncate(50) %>
+		</li>
 	<% end %>
 </ul>
