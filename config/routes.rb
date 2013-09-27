@@ -1,7 +1,7 @@
 Metube::Application.routes.draw do
 
   root 'videos#show_all'
-  get '/videos/:id' => 'videos#show'
+  get '/videos/:id' => 'videos#show', as: 'video'
 
   get '/videos' => 'videos#show_all'
 
