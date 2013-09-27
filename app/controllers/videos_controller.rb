@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
 
 	def show_all
-		
+		@all_videos = Video.all
 	end
 
 	def show

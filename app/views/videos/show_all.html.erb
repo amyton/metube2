@@ -2,3 +2,5 @@
 	<li><%= link_to "Gladiator", "videos/gladiator" %></li>
 	<li><%= link_to "Newsroom", "videos/newsroom" %></li>
 </ul>
+
+<%= @all_videos.each { |video| puts video.title } %>
