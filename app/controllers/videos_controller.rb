@@ -6,6 +6,8 @@ class VideosController < ApplicationController
 
 	def show
 		@video = Video.find_by_id(params[:id])
+		@video_first = Video.first
+		@video_last = Video.last
 	end    
 
 end
