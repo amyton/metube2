@@ -1,4 +1,6 @@
-<ul> List of Awesome Clips
+<h1>List of Awesome Clips</h1>
+
+<ul> 
 	<% @all_videos.each do |video| %>
 		<li><%= link_to video.title, video_url(video.id) %></li>
 	<% end %>
