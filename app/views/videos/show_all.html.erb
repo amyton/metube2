@@ -1,6 +1,8 @@
 <ul> List of Awesome Clips
-	<li><%= link_to "Gladiator", "videos/gladiator" %></li>
-	<li><%= link_to "Newsroom", "videos/newsroom" %></li>
+	<% @all_videos.each do |video| %>
+		<li><%= video.title %></li>
+	<% end %>s
 </ul>
 
-<%= @all_videos.each { |video| puts video.title } %>
+
+
